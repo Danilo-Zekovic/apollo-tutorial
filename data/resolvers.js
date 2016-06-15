@@ -13,8 +13,12 @@ const resolvers = {
     },
   },
   Post: {
-    author(post){
-      return { id: 1, firstName: 'Hello', lastName: 'World' };
+    author(post) {
+      return post.getAuthor();
+    },
+    views(post) {
+      return View.findOne({ postId: post.id })
+             .then((view) => view.views);
     },
   },
 };
