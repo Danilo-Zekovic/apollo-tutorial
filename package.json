@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/Danilo-Zekovic/apollo-tutorial#readme",
   "dependencies": {
+    "casual": "^1.5.3",
     "express": "4.13.4",
     "graphql-tools": "^0.4.2"
   },
